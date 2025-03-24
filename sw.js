@@ -10,4 +10,9 @@ self.addEventListener('activate', e => {
     console.log('service worker activado');
 
     console.log(e);
+});
+
+// evento fetch para descargar archivos estaticos
+self.addEventListener('fetch', e => {
+    console.log('fetch...', e);
 })
